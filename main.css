@@ -1,0 +1,158 @@
+.cards-grid {
+  align-items: center;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 260px);
+  grid-template-rows: repeat(4, 180px);
+  grid-auto-rows: 380px;
+  grid-template-areas: 
+    "wide1 wide1 product1 product2"
+    "wide2 wide2 product1 product2"
+    "product3 product4 wide3 wide3"
+    "product3 product4 wide4 wide4";
+  margin-left: auto;
+  margin-right: auto;
+
+
+  /* padding-right: 100px; */
+  /* padding-left:  */
+}
+
+
+@media (max-width: 1120px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 260px);
+    grid-template-rows: repeat(8, 180px);
+    grid-template-areas: 
+      "wide1 wide1"
+      "wide2 wide2"
+      "product1 product2"
+      "product1 product2"
+      "wide3 wide3"
+      "wide4 wide4"
+      "product3 product4"
+      "product3 product4";
+    /* max-width: 540px; */
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+   
+  }
+  body {
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .cards {
+    min-width: 100%;
+
+  }
+}
+/* 
+@media (max-width: 549px) {
+  .cards-grid {
+    margin: unset;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 330px;
+    grid-template-columns: repeat(1, 155px);
+    grid-template-rows: repeat(4, 180px);
+  } */
+  /* .body {
+    min-width: 100%;
+  } */
+  /* .cards {
+    max-width: 330px;;
+  }
+} */
+
+@media (max-width: 549px) {
+  .body {
+    max-width: 400px;
+  }
+  .cards {
+    width: 400px;
+  }
+}
+
+
+
+
+
+
+.sale-1 {grid-area: wide1}
+.sale-2 {grid-area: wide2}
+.sale-3 {grid-area: wide3}
+.sale-4 {grid-area: wide4}
+.product-1 {grid-area:product1}
+.product-2 {grid-area:product2}
+.product-3 {grid-area:product3}
+.product-4 {grid-area:product4}
+
+
+.cards {
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.card-demo {
+  height: 100%;
+  /* line-height: auto; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: bisque;
+}
+
+div {
+  display: block; 
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: black; */
+  font-family: "Sofia", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  width: 1100px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 549px) {
+  .cards-grid {
+    margin: unset;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 330px;
+    grid-template-columns: repeat(1, 50%);
+    grid-template-rows: repeat(8, 120px);
+    /* grid-template-areas:  */
+    grid-auto-rows: 260px;
+    max-width: 400px;
+  }
+  /* .body {
+    min-width: 100%;
+  } */
+  .cards {
+    min-width: unset;
+    max-width: 400px;
+  }
+  .body {
+    /* min-width: none; */
+    max-width: 330px;
+    width: 330px;
+  }
+}
