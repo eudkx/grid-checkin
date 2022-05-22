@@ -150,9 +150,9 @@ body {
     min-width: unset;
     max-width: 400px;
   }
-  .body {
+  body {
     /* min-width: none; */
     max-width: 330px;
-    width: 330px;
+    width: 100%;
   }
 }
