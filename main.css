@@ -152,7 +152,7 @@ body {
   }
   body {
     /* min-width: none; */
-    max-width: 330px;
+    max-width: 100%;
     width: 100%;
   }
 }
